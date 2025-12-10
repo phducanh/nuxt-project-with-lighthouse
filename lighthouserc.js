@@ -2,11 +2,11 @@ module.exports = {
   ci: {
     collect: {
       numberOfRuns: 1,
-      startServerCommand: 'yarn start',
+      staticDistDir: './dist',
       url: [
-        'http: //localhost:3000/',
-        'http: //localhost:3000/blog/my-third-blog-post',
-        'http: //localhost:3000/blog/tag/web_development'
+        'http://localhost:3000/',
+        'http://localhost:3000/blog/my-third-blog-post',
+        'http://localhost:3000/blog/tag/web_development'
       ]
     },
     assert: {

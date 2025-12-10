@@ -11,8 +11,8 @@ npm install
 echo "✅ Dependencies installed"
 echo ""
 
-echo "🏗️  Step 2: Building project..."
-npm run build
+echo "🏗️  Step 2: Generating static site..."
+npm run generate
 echo "✅ Build completed"
 echo ""
 
@@ -20,7 +20,7 @@ echo "🔍 Step 3: Running Lighthouse CI..."
 # Install LHCI if not already installed
 if ! command -v lhci &> /dev/null; then
     echo "Installing @lhci/cli..."
-    npm install -g @lhci/cli@0.15.x
+    npm install -g @lhci/cli@0.12.0
 fi
 
 lhci autorun

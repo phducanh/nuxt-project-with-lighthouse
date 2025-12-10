@@ -92,3 +92,5 @@ sw.*
 .vscode
 
 .github/workflows/lighthouse-ci-token.txt
+
+.lighthouseci
