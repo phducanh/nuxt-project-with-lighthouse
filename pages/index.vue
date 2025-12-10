@@ -55,7 +55,7 @@
           class="font-bold hover:underline"
           >Debbie O'Brien</a
         >
-        at NuxtJS. See the
+        at NuxtJS. See the link
         <a
           href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
           class="font-bold hover:underline"
