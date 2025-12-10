@@ -1,0 +1,22 @@
+name: Lighthouse CI
+on: [push]
+jobs:
+  lhci:
+    name: Lighthouse
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      - name: Install dependencies and build
+        run: |
+          bun install
+          bun run build
+      - name: Run Lighthouse CI
+        run: |
+          bun add -g @lhci/cli@0.15.x
+          bun x lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
