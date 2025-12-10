@@ -90,3 +90,5 @@ sw.*
 *.swp
 
 .vscode
+
+./github/workflows/lighthouse-ci-token.txt
